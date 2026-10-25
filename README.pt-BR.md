@@ -13,6 +13,56 @@ REA Replica é uma skill autoral de orquestração para o Codex, criada por Wesl
 - Coordena arquitetura, design, implementação, backend, testes, marca, lançamento e implantação por meio das skills `replica-*` instaladas.
 - Impede que código-fonte proprietário, código decompilado, APIs privadas, credenciais, recursos visuais, marcas ou textos distintivos entrem no produto reconstruído.
 
+## Como funciona na prática
+
+```mermaid
+flowchart TD
+    A[Usuário descreve um aplicativo ou uma ideia] --> B[Definir alvo, plataforma, escopo e autorização]
+    B --> C{Quais evidências estão disponíveis?}
+    C -->|Páginas públicas e fluxos visíveis| D[Mapear telas, estados, recursos e jornadas]
+    C -->|Artefato ou execução autorizada| E[Coletar evidências técnicas específicas]
+    D --> F[Registro de evidências: observado, inferido e desconhecido]
+    E --> F
+    F --> G[Criar requisitos e conceitos de dados independentes]
+    G --> H[Escolher arquitetura e sistema visual próprios]
+    H --> I[Construir uma primeira versão funcional]
+    I --> J[Testar comportamento, segurança, acessibilidade e paridade]
+    J --> K{Resultados necessários foram atendidos?}
+    K -->|Não| G
+    K -->|Sim| L[Criar marca, lançar e implantar o produto original]
+```
+
+### Exemplo prático: aplicativo de agendamentos
+
+Pedido:
+
+```text
+Use $rea-replica para estudar o fluxo de agendamento de um aplicativo e
+projetar uma versão original para profissionais de beleza independentes.
+```
+
+A REA Replica:
+
+1. Define as fontes permitidas e limita o escopo à escolha do serviço, escolha do horário, dados do cliente, confirmação, cancelamento e reagendamento.
+2. Registra telas, estados vazios/carregando/erro, caminho principal, casos extremos e regras de negócio visíveis.
+3. Marca cada conclusão como observada, inferida ou desconhecida.
+4. Produz uma matriz independente de funcionalidades e conceitos como Profissional, Serviço, Disponibilidade, Cliente e Agendamento.
+5. Projeta arquitetura, identidade visual, API e banco de dados próprios, sem copiar a implementação analisada.
+6. Constrói o menor fluxo funcional: escolher serviço → escolher horário → informar dados → confirmar.
+7. Testa reserva duplicada, fusos horários, sessão expirada, versão móvel, uso por teclado e isolamento dos dados dos usuários.
+8. Informa o que funciona, o que permanece desconhecido e qual é a próxima etapa recomendada.
+
+Saídas típicas:
+
+```text
+replica/recon.md
+replica/features.csv
+replica/architecture.md
+replica/design-system.md
+replica/test-plan.md
+replica/bugs.md
+```
+
 ## Idiomas
 
 A skill responde no idioma do usuário e oferece suporte explícito a inglês dos Estados Unidos e português do Brasil. Nomes de ferramentas, nomes de skills, caminhos, Evidence IDs, identificadores de APIs e código permanecem inalterados.
