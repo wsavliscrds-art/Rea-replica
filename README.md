@@ -13,6 +13,56 @@ REA Replica is an original Codex orchestration skill created by Weslley Cardoso.
 - Coordinates architecture, design, implementation, backend work, testing, branding, launch, and deployment through the installed `replica-*` skills.
 - Prevents proprietary source, decompiled code, private APIs, credentials, assets, branding, and distinctive copy from entering the rebuilt product.
 
+## How it works in practice
+
+```mermaid
+flowchart TD
+    A[User describes an app or product idea] --> B[Define target, platform, scope, and authority]
+    B --> C{What evidence is available?}
+    C -->|Public pages and visible flows| D[Map screens, states, features, and user journeys]
+    C -->|Authorized artifact or runtime| E[Collect focused technical evidence]
+    D --> F[Evidence ledger: observed, inferred, unknown]
+    E --> F
+    F --> G[Create independent requirements and data concepts]
+    G --> H[Choose architecture and original design system]
+    H --> I[Build a fresh vertical slice]
+    I --> J[Test behavior, security, accessibility, and parity]
+    J --> K{Required outcomes met?}
+    K -->|No| G
+    K -->|Yes| L[Brand, launch, and deploy the original product]
+```
+
+### Practical example: appointment-booking app
+
+Request:
+
+```text
+Use $rea-replica to study the booking flow of an appointment app and design
+an original version for independent beauty professionals.
+```
+
+REA Replica would:
+
+1. Define the permitted sources and limit the scope to service selection, time-slot selection, customer details, confirmation, cancellation, and rescheduling.
+2. Record the screens, empty/loading/error states, happy path, edge cases, and visible business rules.
+3. Mark each conclusion as observed, inferred, or unknown.
+4. Produce an independent feature matrix and data concepts such as Professional, Service, Availability, Customer, and Booking.
+5. Design an original architecture, visual identity, API, and database rather than copying the target implementation.
+6. Build the smallest working flow: choose service → choose time → enter details → confirm.
+7. Test double booking, time zones, expired sessions, mobile layout, keyboard access, and user-data isolation.
+8. Report what works, what remains unknown, and the next recommended stage.
+
+Typical outputs:
+
+```text
+replica/recon.md
+replica/features.csv
+replica/architecture.md
+replica/design-system.md
+replica/test-plan.md
+replica/bugs.md
+```
+
 ## Language support
 
 The skill responds in the user's language and explicitly supports English (US) and Portuguese (Brazil). Tool names, skill names, file paths, Evidence IDs, API identifiers, and code remain unchanged.
