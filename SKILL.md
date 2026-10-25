@@ -1,11 +1,11 @@
 ---
 name: rea-replica
-description: Combine REA artifact analysis with the Replica workflow to understand an app and rebuild an original, clean-room alternative. Use when the user wants evidence-backed reverse engineering followed by recon, architecture, design, implementation, testing, parity analysis, branding, launch, or deployment. Skip for ordinary source-repository analysis or when only one narrow Replica stage is requested.
+description: Guide evidence-backed application analysis and clean-room product development through an original orchestration workflow inspired by established REA and Replica methodologies. Use for analysis, recon, architecture, design, implementation, testing, parity, branding, launch, or deployment. Skip for ordinary source-repository analysis or a single narrow implementation task.
 ---
 
 # REA Replica
 
-Orchestrate the installed `reverse-engineer-anything` and `replica-*` skills. Do not duplicate their detailed procedures. Load and follow only the skills relevant to the current stage.
+REA Replica is an original orchestration workflow created for Codex. Its approach follows the same general line as the established REA and Replica methodologies: evidence-backed understanding, explicit uncertainty, clean-room implementation, and staged product delivery. It does not contain or redistribute their source code. When `reverse-engineer-anything` or `replica-*` skills are available, use them as optional specialized integrations for the relevant stage; otherwise perform the equivalent stage with normal Codex tools and the guidance in this skill.
 
 ## Language
 
