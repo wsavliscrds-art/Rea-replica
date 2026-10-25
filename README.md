@@ -2,7 +2,7 @@
 
 [Português (Brasil)](README.pt-BR.md)
 
-REA Replica is a Codex skill that combines authorized REA artifact analysis with the Replica clean-room application reconstruction workflow.
+REA Replica is an original Codex orchestration skill created by Weslley Cardoso. Its approach is inspired by and follows the same general line as the established REA and Replica methodologies: evidence-backed understanding, explicit uncertainty, clean-room implementation, and staged product delivery. It does not contain or redistribute source code from those projects.
 
 ## What it does
 
@@ -17,15 +17,15 @@ REA Replica is a Codex skill that combines authorized REA artifact analysis with
 
 The skill responds in the user's language and explicitly supports English (US) and Portuguese (Brazil). Tool names, skill names, file paths, Evidence IDs, API identifiers, and code remain unchanged.
 
-## Requirements
+## Optional integrations
 
-Install and configure:
+REA Replica can work with normal Codex tools on its own. When available, it can also work alongside:
 
-- `reverse-engineer-anything`
-- The Replica skill collection (`replica-*`)
-- REA tools when artifact analysis is required
+- `reverse-engineer-anything` for specialized artifact evidence
+- The `replica-*` skills for specialized product-delivery stages
+- REA tools for authorized artifact analysis
 
-This repository orchestrates those dependencies; it does not bundle them.
+These integrations are separate projects. This repository does not contain or redistribute their source code.
 
 ## Installation
 
