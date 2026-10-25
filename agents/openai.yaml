@@ -1,0 +1,4 @@
+interface:
+  display_name: "REA Replica"
+  short_description: "Authorized analysis and clean-room rebuilding"
+  default_prompt: "Use $rea-replica to analyze this app and plan a clean-room reconstruction in my language."
